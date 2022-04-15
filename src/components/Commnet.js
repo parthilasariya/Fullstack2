@@ -1,3 +1,0 @@
-
-import "./LikeButton"
-import "./Timer"
