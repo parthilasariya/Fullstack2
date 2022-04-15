@@ -1,19 +1,18 @@
-//import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
-import React from 'react';
-import ReactDOM from 'react-dom';
 
-
-//importing components
-
-import TweetContainer from  "./components/TweetContainer";
-import Timer from "./components/Timer";
-import LikeButton from "./components/LikeButton";
-import Comment from "./components/Commnet";
+import TweetContainer from './components/tweetcontainer.js';
 
 function App() {
-  return <TweetContainer/>;
-  
-
+  return (
+    <>
+    <div className='App'>
+      <TweetContainer status="Stop COVID-19, Take-out only!"/>
+      <TweetContainer status="At home, binge watching Breaking Bad for second time!"/>
+      <TweetContainer status="When is the beach opening up? Can't wait.."/>
+    </div>
+    </>
+  );
 }
+
 export default App;
